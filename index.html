@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfolio</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
 
   <style>
-    /* width */
+    /* Hide scrollbar */
     ::-webkit-scrollbar {
       display: none;
     }
@@ -17,26 +17,22 @@
 </head>
 
 <body>
-  <div class="slides">
-    <section>
-      <header>
-        <ul>
-          <li><a href="#projects">01. Projects</a></li>
-          <li><a href="#contacts">02. Contacts</a></li>
-          <li><a href="Assets/Davis_Resume.pdf" target="_blank"><button>Resume</button></a></li>
-        </ul>
-      </header>
+  <section>
+    <header>
+      <ul>
+        <li><a href="#projects">01. Projects</a></li>
+        <li><a href="#contacts">02. Contacts</a></li>
+        <li><a href="Assets/Internship_Resume.pdf" target="_blank"><button>Resume</button></a></li>
+      </ul>
+    </header>
 
-
+    <div class="slides">
       <div class="intro-container">
         <div id="intro-text">
           <a style="color:#A5D7E8">Hi, my name is</a>
           <a id="intro-name">Bryce Davis<br></a>
           <p id="intro-par">I'm a student at the State University of New York at Oneonta studying Computer Science
-            with
-            an
-            interest in
-            Software Engineering. I'm currently focused on Web and App development.</p>
+            with an interest in Software Engineering. I'm currently focused on Web and App development.</p>
         </div>
         <div id="intro-img-container">
           <div id="intro-img">
@@ -44,44 +40,39 @@
           </div>
         </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 
   <div class="slides">
     <section id="projects">
       <div class="card">
         <div class="card-content">
           <div class="card-icons">
-            <i class='fa fa-folder-o fa-2x' style='color: #A5D7E8'></i>
-            <a href="https://brycemovie-app.netlify.app/" target="_blank"><button><i
-                  class="fas fa-external-link-alt"></button></i></a>
-
-
+            <a href="https://movie-app.brycedavis5.repl.co/" target="_blank" class="card-link">
+              <i class='fa fa-folder-o fa-2x' style='color: #A5D7E8'></i>
+            </a>
           </div>
           <div class="card-header">Movie App</div>
-          <div class="card-text">A Movie app that provided searched movie's plot summary, release date, and cover.</div>
+          <div class="card-text">A Movie app that provides searched movie's plot summary, release date, and cover.</div>
           <div class="card-footer">
             <ul>
               <li>Html & Css</li>
-              <li>JS</li>
+              <li>Js</li>
               <li>TMDb API</li>
             </ul>
           </div>
         </div>
       </div>
 
-
       <div class="card">
         <div class="card-content">
           <div class="card-icons">
-            <i class='fa fa-folder-o fa-2x' style='color: #A5D7E8'></i>
-            <a href="https://replit.com/@BryceDavis5/TicTacToe?v=1" target="_blank">
-              <button><i class="fas fa-external-link-alt"></i>
-              </button>
+            <a href="https://replit.com/@BryceDavis5/TicTacToe?v=1" target="_blank" class="card-link">
+              <i class='fa fa-folder-o fa-2x' style='color: #A5D7E8'></i>
             </a>
           </div>
           <div class="card-header">Tic-tac-toe</div>
-          <div class="card-text">Play the classic Tic-Tac-Toe game with two players</div>
+          <div class="card-text">Play the classic Tic-Tac-Toe game with two players.</div>
           <div class="card-footer">
             <ul>
               <li>Python</li>
@@ -94,11 +85,9 @@
       <div class="card">
         <div class="card-content">
           <div class="card-icons">
-            <i class='fa fa-folder-o fa-2x' style='color: #A5D7E8'></i>
-            <a href="https://languagequiz.netlify.app" target="_blank"><button><i
-                  class="fas fa-external-link-alt"></i></button></a>
-
-
+            <a href="https://cssi-2022-day-7-final.brycedavis5.repl.co/" target="_blank" class="card-link">
+              <i class='fa fa-folder-o fa-2x' style='color: #A5D7E8'></i>
+            </a>
           </div>
           <div class="card-header">Language Quiz</div>
           <div class="card-text">Guess the top 9 languages in the United States!</div>
@@ -115,13 +104,11 @@
       <div class="card">
         <div class="card-content">
           <div class="card-icons">
-            <i class='fa fa-folder-o fa-2x' style='color: #A5D7E8'></i>
-            <a href="https://whatisyourpersonality.netlify.app" target="_blank">
-              <button><i class="fas fa-external-link-alt"></i>
-              </button>
+            <a href="https://cssi-2022-day-9-final.brycedavis5.repl.co" target="_blank" class="card-link">
+              <i class='fa fa-folder-o fa-2x' style='color: #A5D7E8'></i>
             </a>
           </div>
-          <div class="card-header">Personality test</div>
+          <div class="card-header">Personality Test</div>
           <div class="card-text">What type of Personality do you have?</div>
           <div class="card-footer">
             <ul>
@@ -136,10 +123,8 @@
       <div class="card">
         <div class="card-content">
           <div class="card-icons">
-            <i class='fa fa-folder-o fa-2x' style='color: #A5D7E8'></i>
-            <a href="https://gifcurator.netlify.app" target="_blank">
-              <button><i class="fas fa-external-link-alt"></i>
-              </button>
+            <a href="https://geremy-day-12-end-of-codealong.brycedavis5.repl.co" target="_blank" class="card-link">
+              <i class='fa fa-folder-o fa-2x' style='color: #A5D7E8'></i>
             </a>
           </div>
           <div class="card-header">Gif Generator</div>
@@ -149,7 +134,7 @@
               <li>Html & Css</li>
               <li>Js</li>
               <li>Bulma</li>
-              <li>Giphy Api</li>
+              <li>Giphy API</li>
             </ul>
           </div>
         </div>
@@ -158,14 +143,12 @@
       <div class="card">
         <div class="card-content">
           <div class="card-icons">
-            <i class='fa fa-folder-o fa-2x' style='color: #A5D7E8'></i>
-            <a href="https://genericweb.netlify.app/" target="_blank">
-              <button><i class="fas fa-external-link-alt"></i>
-              </button>
+            <a href="https://generic-webpage.brycedavis5.repl.co" target="_blank" class="card-link">
+              <i class='fa fa-folder-o fa-2x' style='color: #A5D7E8'></i>
             </a>
           </div>
           <div class="card-header">Generic Webpage</div>
-          <div class="card-text">Scholarship website landing page for Agricultural Professor</div>
+          <div class="card-text">Scholarship website landing page for Agricultural Professor.</div>
           <div class="card-footer">
             <ul>
               <li>Html & Css</li>
@@ -176,17 +159,18 @@
       </div>
     </section>
   </div>
-  <script src="script.js"></script>
 
   <div class="slides" id="contacts">
     <div class="contact-container">
       <div class="contact-header">Get In Touch</div>
-      <p class="contact-p">Seeking internship like a caffeine-craving code guru! Let's turn bugs into features – I'll supply the code,
-        you supply the challenge. Ready to dive into the debugging dance together?</p>
-      <a href="https://www.linkedin.com/in/bryce-davis-4b90b0246/" target="_blank" class="contact-btn"><button>Say Hi</button></a>
+      <p class="contact-p">Seeking internship like a caffeine-craving code guru! Let's turn bugs into features – I'll
+        supply the code, you supply the challenge. Ready to dive into the debugging dance together?</p>
+      <a href="https://www.linkedin.com/in/bryce-davis-4b90b0246/" target="_blank" class="contact-btn">Say Hi</a>
     </div>
   </div>
+
   <footer>Built by Bryce Davis ;)</footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
