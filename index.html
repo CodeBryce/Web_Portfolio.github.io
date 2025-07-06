@@ -1,176 +1,134 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Bryce Davis</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css" type="text/css" />
-
-  <style>
-    /* Hide scrollbar */
-    ::-webkit-scrollbar {
-      display: none;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <section>
-    <header>
-      <ul>
-        <li><a href="#projects">01. Projects</a></li>
-        <li><a href="#contacts">02. Contacts</a></li>
-        <li><a href="Assets/Internship_Resume.pdf" target="_blank"><button>Resume</button></a></li>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Portfolio</div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <ul class="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+        <li><a href="Assets/Davis_Resume.pdf" target="_blank"><button>Resume</button></a></li>
       </ul>
-    </header>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+    </nav>
+  </header>
 
-    <div class="slides">
-      <div class="intro-container">
-        <div id="intro-text">
-          <a style="color:#A5D7E8">Hi, my name is</a>
-          <a id="intro-name">Bryce Davis<br></a>
-          <p id="intro-par">I'm a student at the State University of New York at Oneonta studying Computer Science
-            with an interest in Software Engineering. I'm currently focused on Web and App development.</p>
-        </div>
-        <div id="intro-img-container">
-          <div id="intro-img">
-            <img style="border-radius:25px;" src="Assets/headshot.jpg" alt="Portfolio Image" width="250" height="300" />
-          </div>
-        </div>
+  <main>
+    <section class="intro">
+      <div class="intro-text">
+        <p>Hi, my name is</p>
+        <h1>Bryce Davis</h1>
+        <p class="description">
+          I'm a student at the State University of New York at Oneonta studying Computer Science with an interest in
+          Software Engineering. I'm currently focused on Web and App development.
+        </p>
       </div>
-    </div>
-  </section>
+      <div class="intro-img">
+        <img src="Assets/headshot.jpg" alt="Bryce Davis" />
+      </div>
+    </section>
 
-  <div class="slides">
     <section id="projects">
-      <div class="card">
-        <div class="card-content">
-          <div class="card-icons">
-            <a href="https://brycemovieapp.netlify.app" target="_blank" class="card-link">
-              <i class='fa fa-folder-o fa-2x' style='color: #A5D7E8'></i>
-            </a>
-          </div>
-          <div class="card-header">Movie App</div>
-          <div class="card-text">A Movie app that provides searched movie's plot summary, release date, and cover.</div>
-          <div class="card-footer">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="card">
+          <a href="https://brycemovieapp.netlify.app" target="_blank" class="card-link">
+            <i class='fa fa-folder-o fa-2x'></i>
+            <h3>Movie App</h3>
+            <p>A Movie app that provides searched movie's plot summary, release date, and cover.</p>
             <ul>
-              <li>Html & Css</li>
-              <li>Js</li>
+              <li>HTML & CSS</li>
+              <li>JS</li>
               <li>TMDb API</li>
             </ul>
-          </div>
+          </a>
         </div>
-      </div>
-
-      <div class="card">
-        <div class="card-content">
-          <div class="card-icons">
-            <a href="https://replit.com/@BryceDavis5/TicTacToe?v=1" target="_blank" class="card-link">
-              <i class='fa fa-folder-o fa-2x' style='color: #A5D7E8'></i>
-            </a>
-          </div>
-          <div class="card-header">Tic-tac-toe</div>
-          <div class="card-text">Play the classic Tic-Tac-Toe game with two players.</div>
-          <div class="card-footer">
+        <div class="card">
+          <a href="https://replit.com/@BryceDavis5/TicTacToe?v=1" target="_blank" class="card-link">
+            <i class='fa fa-folder-o fa-2x'></i>
+            <h3>Tic-tac-toe</h3>
+            <p>Play the classic Tic-Tac-Toe game with two players.</p>
             <ul>
               <li>Python</li>
               <li>Tkinter</li>
             </ul>
-          </div>
+          </a>
         </div>
-      </div>
-
-      <div class="card">
-        <div class="card-content">
-          <div class="card-icons">
-            <a href="https://languagequiz.netlify.app" target="_blank" class="card-link">
-              <i class='fa fa-folder-o fa-2x' style='color: #A5D7E8'></i>
-            </a>
-          </div>
-          <div class="card-header">Language Quiz</div>
-          <div class="card-text">Guess the top 9 languages in the United States!</div>
-          <div class="card-footer">
+        <div class="card">
+          <a href="https://languagequiz.netlify.app" target="_blank" class="card-link">
+            <i class='fa fa-folder-o fa-2x'></i>
+            <h3>Language Quiz</h3>
+            <p>Guess the top 9 languages in the United States!</p>
             <ul>
-              <li>Html & Css</li>
-              <li>Js</li>
+              <li>HTML & CSS</li>
+              <li>JS</li>
               <li>Bulma</li>
             </ul>
-          </div>
+          </a>
         </div>
-      </div>
-
-      <div class="card">
-        <div class="card-content">
-          <div class="card-icons">
-            <a href="https://whatisyourpersonality.netlify.app" target="_blank" class="card-link">
-              <i class='fa fa-folder-o fa-2x' style='color: #A5D7E8'></i>
-            </a>
-          </div>
-          <div class="card-header">Personality Test</div>
-          <div class="card-text">What type of Personality do you have?</div>
-          <div class="card-footer">
+        <div class="card">
+          <a href="https://whatisyourpersonality.netlify.app" target="_blank" class="card-link">
+            <i class='fa fa-folder-o fa-2x'></i>
+            <h3>Personality Test</h3>
+            <p>What type of Personality do you have?</p>
             <ul>
-              <li>Html & Css</li>
-              <li>Js</li>
+              <li>HTML & CSS</li>
+              <li>JS</li>
               <li>Bulma</li>
             </ul>
-          </div>
+          </a>
         </div>
-      </div>
-
-      <div class="card">
-        <div class="card-content">
-          <div class="card-icons">
-            <a href="https://gifcurator.netlify.app" target="_blank" class="card-link">
-              <i class='fa fa-folder-o fa-2x' style='color: #A5D7E8'></i>
-            </a>
-          </div>
-          <div class="card-header">Gif Generator</div>
-          <div class="card-text">Gifs like grandma used to make :)</div>
-          <div class="card-footer">
+        <div class="card">
+          <a href="https://gifcurator.netlify.app" target="_blank" class="card-link">
+            <i class='fa fa-folder-o fa-2x'></i>
+            <h3>Gif Generator</h3>
+            <p>Gifs like grandma used to make :)</p>
             <ul>
-              <li>Html & Css</li>
-              <li>Js</li>
+              <li>HTML & CSS</li>
+              <li>JS</li>
               <li>Bulma</li>
               <li>Giphy API</li>
             </ul>
-          </div>
+          </a>
         </div>
-      </div>
-
-      <div class="card">
-        <div class="card-content">
-          <div class="card-icons">
-            <a href="https://genericweb.netlify.app" target="_blank" class="card-link">
-              <i class='fa fa-folder-o fa-2x' style='color: #A5D7E8'></i>
-            </a>
-          </div>
-          <div class="card-header">Generic Webpage</div>
-          <div class="card-text">Scholarship website landing page for Agricultural Professor.</div>
-          <div class="card-footer">
+        <div class="card">
+          <a href="https://genericweb.netlify.app" target="_blank" class="card-link">
+            <i class='fa fa-folder-o fa-2x'></i>
+            <h3>Generic Webpage</h3>
+            <p>Scholarship website landing page for Agricultural Professor.</p>
             <ul>
-              <li>Html & Css</li>
-              <li>Js</li>
+              <li>HTML & CSS</li>
+              <li>JS</li>
             </ul>
-          </div>
+          </a>
         </div>
       </div>
     </section>
-  </div>
 
-  <div class="slides" id="contacts">
-    <div class="contact-container">
-      <div class="contact-header">Get In Touch</div>
-      <p class="contact-p">Seeking internship like a caffeine-craving code guru! Let's turn bugs into features – I'll
-        supply the code, you supply the challenge. Ready to dive into the debugging dance together?</p>
+    <section id="contacts" class="contact">
+      <h2>Get In Touch</h2>
+      <p>Seeking internship like a caffeine-craving code guru! Let's turn bugs into features – I'll supply the code, you
+        supply the challenge. Ready to dive into the debugging dance together?</p>
       <a href="https://www.linkedin.com/in/bryce-davis-4b90b0246/" target="_blank" class="contact-btn">Say Hi</a>
-    </div>
-  </div>
+    </section>
+  </main>
 
-  <footer>Built by Bryce Davis ;)</footer>
-  <script src="script.js"></script>
+  <footer>
+    Built by Bryce Davis ;)
+  </footer>
 </body>
 
 </html>
